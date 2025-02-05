@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interest Form</title>
+    <style>
+        body {
+            background-color:rgb(200, 216, 230);
+        }
+        .submit {
+            background-color: #288f69;
+            border: none;
+            color: white;
+            padding: 16px 20px;
+            text-decoration: none;
+            margin: 8px 730px;
+            cursor: pointer;
+        }   
+        .submit:hover {
+            background-color: rgb(121, 126, 120);
+            color: white;
+        } 
+        .colored-box {
+            background-color: rgb(87, 139, 188);
+            margin-left: 5px;
+            font-size: 20px;
+        }
+        input {
+            background-color: rgb(157, 198, 235);
+        }
+        .dropdown {
+            font-size: 17px;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        The Interest Form
+    </h1>
+    <form name="Interest Form" method="get" action="lab2_successpage.html">
+        <div class="colored-box">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname" required><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <hr>
+            <label for="age">Age:</label>
+            <select class="dropdown" id="age" name="age">
+                <option hidden disabled selected>-- Select Option --</option>
+                <option value="13-15">13-15</option>
+                <option value="16-18">16-18</option>
+                <option value="19-21">19-21</option>
+                <option value="22+">22+</option>
+            </select>
+            <br>
+            <hr>
+            <label for="contact">Best Method of Contact:</label><br>
+            <input type="radio" name="method">Call<br>
+            <input type="radio" name="method">Email<br>
+            <input type="radio" name="method">Text<br>
+            <label for="contact-info">Phone Number/Email Address:</label>
+            <input type="text" id="info" name="info" required><br><br>
+            <input type="submit" class="submit" value="Submit">
+        </div>
+
+    </form>
+</body>
+</html>
